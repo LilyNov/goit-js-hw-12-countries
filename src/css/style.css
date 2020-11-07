@@ -18,6 +18,12 @@ body {
   height: 100%;
 }
 
+h1 {
+  margin: 0;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: center;
+}
 img {
   display: block;
   width: 240px;
@@ -57,7 +63,7 @@ img {
   height: 50px;
   margin: auto;
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
   font-size: 22px;
   border: 2px solid gray;
