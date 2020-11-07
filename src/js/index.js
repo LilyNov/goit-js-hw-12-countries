@@ -14,7 +14,7 @@ refs.input.addEventListener('input', debounce(onInputChange, 500))
 
 //событие input
 function onInputChange(evt) {
-    countryApiService.query = evt.target.value
+  countryApiService.query = evt.target.value
   refs.markupContainer.innerHTML = ''
   if (!countryApiService.query) {
     return
