@@ -19,14 +19,13 @@ function onInputChange(evt) {
   if (!countryApiService.query) {
     return
   }
-    countryApiService.fetchCountryByName().then(isValidSearchQuery).catch(error => { console.log(error) }) 
+    countryApiService.fetchCountryByName().then(isValidSearchQuery).catch(itsError => { console.log(itsError) }) 
 
 }
 
 
 function isValidSearchQuery(evt) {
-    console.log(evt)
-  if (evt.length === 1) {
+   if (evt.length === 1) {
     renderCountryCard(evt);
     return;
   } else if (evt.length <= 10) {
